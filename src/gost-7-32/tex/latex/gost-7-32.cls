@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{gost-7-32}[2022/01/28 GOST 7.32-2017]
+\ProvidesClass{gost-7-32}[2025/01/25 GOST 7.32-2017]
 
 %
 % Supported font sizes: 12pt, 14pt
@@ -17,7 +17,6 @@
 %
 % Use 1.5 line spacing
 %
-\RequirePackage{setspace}
 \linespread{1.5}
 
 %
@@ -37,16 +36,11 @@
 ]{geometry}
 
 %
-% Use TMR-like font
-%
-\RequirePackage{tempora}
-
-%
 % Use russian language
 %
-\RequirePackage[T2A]{fontenc}
-\RequirePackage[utf8]{inputenc} % Warning: inputenc package ignored with utf8 based engines.
-\RequirePackage[english, russian]{babel}
+\usepackage{fontspec}
+\usepackage[main=russian,english]{babel}
+\setmainfont{Times New Roman}
 
 %
 % gost-7-32 packages
