@@ -41,6 +41,7 @@
 \usepackage{fontspec}
 \usepackage[main=russian,english]{babel}
 \setmainfont{Times New Roman}
+\setsansfont{Arial}
 
 %
 % gost-7-32 packages
